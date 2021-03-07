@@ -16,6 +16,11 @@ using namespace glm;
 
 #include "Common/shader.hpp"
 
+void DrawScene()
+{
+
+}
+
 int main(void)
 {
     // Initialise GLFW
