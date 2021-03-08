@@ -169,8 +169,8 @@
     <ClInclude Include="Common\Shapes.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Shaders\SimpleFragmentShader.fragmentshader" />
-    <None Include="Shaders\SimpleVertexShader.vertexshader" />
+    <None Include="Shaders\SimpleFragmentShader.frag" />
+    <None Include="Shaders\SimpleVertexShader.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
