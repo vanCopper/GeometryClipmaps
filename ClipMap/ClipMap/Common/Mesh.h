@@ -10,11 +10,19 @@ using namespace std;
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
+
 struct Vertex
 {
     glm::vec3 Position;
     glm::vec3 Normal;
     glm::vec2 TexCoords;
+
+    Vertex(glm::vec3 position, glm::vec3 normal, glm::vec2 texcoords)
+    {
+        Position = position;
+        Normal = normal;
+        TexCoords = texcoords;
+    }
 };
 
 struct Texture

@@ -19,7 +19,10 @@ Mesh::Mesh(vector<Vertex> vertices, vector<GLuint> indices)
 
 void Mesh::Draw(GLuint shaderProgramID)
 {
-
+    //TODO: 
+    glBindVertexArray(this->VAO);
+    glDrawElements(GL_TRIANGLES, this->indices.size(), GL_UNSIGNED_INT, 0);
+    glBindVertexArray(0);
 }
 
 void Mesh::SetupMesh()

@@ -1,9 +1,36 @@
 #pragma once
 #include "GLFW/glfw3.h"
+#include "../core.h"
+#include <vector>
+#include "Mesh.h"
 class Shapes
 {
 };
 
+static const Mesh Cube(vector<Vertex>{
+        Vertex(glm::vec3(-1, 1, 1), glm::vec3(), glm::vec2()),
+        Vertex(glm::vec3(1, 1, 1), glm::vec3(), glm::vec2()),
+        Vertex(glm::vec3(-1, -1, 1), glm::vec3(), glm::vec2()),
+        Vertex(glm::vec3(1, -1, 1), glm::vec3(), glm::vec2()),
+        Vertex(glm::vec3(-1, 1, -1), glm::vec3(), glm::vec2()),
+        Vertex(glm::vec3(1, 1, -1), glm::vec3(), glm::vec2()),
+        Vertex(glm::vec3(1, -1, -1), glm::vec3(), glm::vec2()),
+        Vertex(glm::vec3(-1, -1, -1), glm::vec3(), glm::vec2())
+    },
+    vector<GLuint>{
+        0, 1, 2,
+        1, 2, 3,
+        1, 3, 6,
+        1, 5, 6,
+        0, 1, 4,
+        1, 4, 5,
+        2, 3, 7,
+        3, 6, 7,
+        0, 2, 7,
+        0, 4, 7,
+        4, 5, 6,
+        4, 6, 7
+    });
 // Cube Vertex_Buffer
 static const GLfloat CubeVertexBufferData[] = {
         -1.0f,-1.0f,-1.0f,

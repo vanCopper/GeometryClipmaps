@@ -160,6 +160,7 @@
     <ClCompile Include="Common\shader.cpp" />
     <ClCompile Include="Common\Controls.cpp" />
     <ClCompile Include="Common\Shapes.cpp" />
+    <ClCompile Include="Common\Mesh.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bitmap.h" />
@@ -167,6 +168,7 @@
     <ClInclude Include="Common\Controls.hpp" />
     <ClInclude Include="core.h" />
     <ClInclude Include="Common\Shapes.hpp" />
+    <ClInclude Include="Common\Mesh.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\SimpleFragmentShader.frag" />
