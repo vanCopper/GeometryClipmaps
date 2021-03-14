@@ -1,7 +1,4 @@
 #pragma once
-#include "GLFW/glfw3.h"
-#include "../core.h"
-#include <vector>
 #include "Mesh.h"
 class Shapes
 {
